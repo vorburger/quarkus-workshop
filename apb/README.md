@@ -7,7 +7,7 @@ If running via your own machine you can run the following command
 
   oc new-project labs-infra
 
-  oc run apb --restart=Never --image="quay.io/openshiftlabs/quarkus-workshop-apb" \
+  oc run apb --restart=Never --image="quay.io/tqvarnst/quarkus-workshop-apb" \
              --image-pull-policy="Always" \
              -- provision -vvv \
              -e namespace="$(oc project -q)"  \
